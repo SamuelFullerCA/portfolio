@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+main {
+    background-color: rgb(158, 160, 164);
+}
+
+header {
+    display: flex;
+    background-color: #192138;
+    height: 150px;
+    text-wrap: center;
+    align-items: center;
+    h1 {padding: 25px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-right: 150px;
+        background-color: #A6A989;
+        }
+}
+
+figure{
+    image-resolution: 600px 1080px;
+}
+
+.aboutme{
+    display: flex; 
+
+    
+    h2 {font-size: 300%;
+        padding: 10px;
+        padding-left: 90px;
+        
+    }
+
+}
+
+.bio{
+    font-size: 150%;
+    padding: 15px;
+    border-left: 5px solid #192138;
+    width: 1000px;
+}
+
+.work{
+    display: flex; 
+    
+    
+
+    h2 {font-size: 300%;
+        padding: 95px;
+        /* text-align: center; */
+        text-align: right;
+         
+    }
+}
+
+.projects{
+    padding: 15px;
+    border-left: 5px solid #192138;
+    /* temporary sizes */
+    width: 1920px;
+    height: 1080px;
+}
