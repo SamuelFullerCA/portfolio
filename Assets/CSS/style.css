@@ -1,17 +1,16 @@
 *{
     margin: 0;
 }
-main {
-    background-color: rgb(158, 160, 164);
-}
 
+/* This styles the entire header */
 header {
     display: flex;
     background-color: #192138;
     height: 150px;
     text-wrap: center;
     align-items: center;
-    h1 {padding: 25px;
+
+    h1 {padding: 35px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         padding-right: 150px;
@@ -19,46 +18,94 @@ header {
         }
 }
 
+/* This styles the 4 hyperlinks in the header */
+#quicklinks {
+    position: relative;
+    text-align: right;
+    list-style-type: none;
+    width: 65vw;
+
+    li{
+        display: inline;
+        color: a#A6A989;
+        padding: 15px;
+        font-size: 150%;
+        text-decoration: underline;
+   } 
+   li:hover {
+        background-color:#555646;
+        border-radius: 10px;
+        
+   }
+}
+
+/* This styles the hero image between header and main */
 figure{
     image-resolution: 600px 1080px;
 }
 
-.aboutme{
-    display: flex; 
+/* This styles the whole main section with the aboutme and work sections */
+main {
+    background-color: rgb(255, 255, 255);
+}
 
-    
+/* This styles the "about me" section  */
+.aboutme{ 
+   display: flex;
+   flex-wrap: wrap;
+
     h2 {font-size: 300%;
         padding: 10px;
         padding-left: 90px;
+        border-right: 5px solid #192138;
+        /* inline-size: 150px; */
         
     }
 
 }
 
+/* This styles the biography text side (right) of the aboutme section */
 .bio{
     font-size: 150%;
     padding: 15px;
-    border-left: 5px solid #192138;
+    padding-left: 50px;
     width: 1000px;
 }
 
+/* This styles the "work" section */
 .work{
     display: flex; 
     
-    
-
     h2 {font-size: 300%;
-        padding: 95px;
-        /* text-align: center; */
-        text-align: right;
-         
+        padding: 10px;
+        padding-left: 180px;
+        border-right: 5px solid #192138;
+       
+       
+        
     }
 }
 
+/* This styles the project links side (right) of the work section */
 .projects{
     padding: 15px;
-    border-left: 5px solid #192138;
-    /* temporary sizes */
+    padding-left: 50px;
     width: 1920px;
     height: 1080px;
+}
+
+/* This styles the "Contact Me" section */
+.contactme{
+display: flex;
+
+    h2 {font-size: 300%;
+        padding: 10px;
+        padding-left: 56px;
+        border-right: 5px solid #192138;
+    }
+}
+
+/* This styles the contact onfo side (right) of contact section */
+.contactinfo{
+    height: 500px;
 }
