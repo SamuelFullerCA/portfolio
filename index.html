@@ -15,20 +15,21 @@
                 <li><a href="#aboutme">About Me</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contactme">Contact Me</a></li>
-                <li>Resume</li>
+                <!-- Temporarly links a picture of pippin from Lord of the rings until proper resume is complete with new cirtificated at end of bootcamp -->
+                <li><a href="./Assets/Images/PippinBoyd.webp" target="_blank" download>Download Resume</a></li>
             </ul>
     </header>
     <!-- image below header and about main body -->
     <figure>
-        <img src="C:\Users\Pocatello\Downloads\Untitled Design (1).png" alt="hero banner"
-            width="1750"
-            height="420"/>
+        <img id="hero" src="C:\Users\Pocatello\Downloads\Untitled Design (1).png" alt="hero banner"
+            height="420"
+            />
     </figure>
     <!-- This is the main body that includes the about-me and work sections -->
     <main>
         <!-- The about me portion with bio -->
         <article class="aboutme">
-            <h2 class="boxedtitles">About Me</h2>
+            <h2 id="aboutme">About Me</h2>
                 <P class="bio">Born and raised on the northern island of New Zealand, I moved to Souther California at the age of 10
                     I grew up facinated by both the utility and hardware of computers as wel as the digital world. I was always
                     facinated by how I could connnect to a a hole new digital world and even connect to my favult thousands of 
@@ -45,9 +46,9 @@
         <br>
         <!-- the work section with links to deployed projects -->
         <article class="work">
-            <h2 id="worktag">Work</h2>
+            <h2 id="work">Work</h2>
             
-            <!-- the 4 project cards -->
+            <!-- the 5 project cards -->
             <section id="project1">
                 <aside id="surf">
                     <h3>Surf Report</h3>
@@ -66,6 +67,7 @@
                 <aside id="calc">
                     <h3>Calculator</h3>
                     <p>React / JavaScript / CSS</p>
+                    
                 </aside>
             </section>
 
@@ -89,12 +91,13 @@
 
     <!-- footer section with contact info -->
     <footer>
-        <article class="contactme">
-            <h2 >Contact Me</h2>
-        <!-- temporaty div -->
-                <div class="contactinfo">
-                    <p>PLACEHOLDER</p>
-                </div>
+        <article class="contact">
+            <h2 id="contactme">Contact Me</h2>
+                <ul class="contactinfo">
+                    <li>samuelfullerca@gmail.com</li>
+                    <li>714-472-3748</li>
+                    <li><a href="https://github.com/SamuelFullerCA" target="_blank">Github</a></li>
+                </ul>
         </article>
     </footer>
 </body>
