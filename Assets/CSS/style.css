@@ -1,11 +1,23 @@
+/* This is the universal style */
 *{
     margin: 0;
+    
+    
+}
+
+/* color roots */
+:root{
+    --pojectnames: #8ce7f2;
+    --headers: #80b3dd;
+    --lightblue: #9db4c7;
+    --darkblue: #18193f;
+    --body: #b4d1e9;
 }
 
 /* This styles the entire header */
 header {
     display: flex;
-    background-color: #192138;
+    background-color: var(--darkblue);
     height: 150px;
     text-wrap: center;
     align-items: center;
@@ -14,7 +26,7 @@ header {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         padding-right: 150px;
-        background-color: #A6A989;
+        background-color: var(--headers);
         }
 }
 
@@ -27,13 +39,13 @@ header {
 
     li{
         display: inline;
-        color: a#A6A989;
+        /* color: #A6A989; */
         padding: 15px;
         font-size: 150%;
         text-decoration: underline;
    } 
    li:hover {
-        background-color:#555646;
+        background-color:var(--headers);
         border-radius: 10px;
         
    }
@@ -41,53 +53,55 @@ header {
 
 /* This styles the hero image between header and main */
 figure{
-    image-resolution: 600px 1080px;
+   background-color: var(--lightblue);
+   
 }
 
 /* This styles the whole main section with the aboutme and work sections */
 main {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--lightblue)
 }
 
 /* This styles the "about me" section  */
 .aboutme{ 
-   display: flex;
+    
+   /* display: flex; */
    border: 5px solid black;
    border-radius: 10px;
-   margin: 35px;
+   margin-left: 35px;
+   margin-right: 35px;
+   padding-top: 15px;
+   background-color: var(--body);
    
 
     h2 {
+        background-color: var(--headers);
         font-size: 200%;
-        padding: 5px;
         width: 180px;
         text-align: center;
         border: 5px solid #192138;
         border-radius: 10px;
         position: relative;
-        margin-top: -35px;
+        margin-top: -45px;
         margin-left: 20px;
         height: fit-content;
-        padding: 10px;
-        
-
-        
-
+        padding: 10px; 
+    }
+    .bio{
+        font-size: 150%;
+        padding: 15px;
+        padding-left: 50px;
+        width: 1000px;
         
     }
-
 }
 
-/* This styles the biography text side (right) of the aboutme section */
-.bio{
-    font-size: 150%;
-    padding: 15px;
-    padding-left: 50px;
-    width: 1000px;
-    
-}
+
 
 /* This styles the "work" section */
+/* Colors are placeholders until projects are done and linked. At whichpoint better 
+images will be used to represent each project respectivly, and hover-colors will be changed to 
+reflect the new images. */
 .work{
     display: flex;
     flex-direction: row;
@@ -95,6 +109,7 @@ main {
     border: 5px solid black;
     border-radius: 10px;
     margin: 35px;
+    background-color: var(--body);
     
 
     section{
@@ -104,9 +119,10 @@ main {
     
 
     h2 {
+        background-color: var(--headers);
         margin-right: 1500px;
         font-size: 200%;
-        border: 5px outset rgb(44, 138, 66);
+        border: 5px solid black;
         border-radius: 10px;
         position: relative;
         margin-top: -35px;
@@ -129,7 +145,8 @@ main {
 
             #surf {
                 margin-top: 300px;
-                background-color: #9da3b6;
+                background-color: var(--headers);
+                border-radius: 4px;
                 height: fit-content;
                 width: fit-content;
                 padding: 10px;
@@ -154,7 +171,7 @@ main {
 
             #led {
                 margin-top: 150px;
-                background-color: #9da3b6;
+                background-color: var(--headers);
                 height: fit-content;
                 width: fit-content;
                 padding: 10px;
@@ -178,7 +195,7 @@ main {
 
             #calc {
                 margin-top: 150px;
-                background-color: #9da3b6;
+                background-color: var(--headers);
                 height: fit-content;
                 width: fit-content;
                 padding: 10px;
@@ -204,7 +221,7 @@ main {
 
             #pastel {
                 margin-top: 150px;
-                background-color: #9da3b6;
+                background-color: var(--headers);
                 height: fit-content;
                 width: fit-content;
                 padding: 10px;
@@ -223,6 +240,7 @@ main {
         width: 1300px;
         height: 150px;
         border: 8px double black;
+
         background-image: linear-gradient(
             rgba(222, 236, 102, 0.3) 0%,
             rgba(222, 236, 102, 0.6) 100%
@@ -230,7 +248,7 @@ main {
 
             #run {
                 margin-top: 50px;
-                background-color: #9da3b6;
+                background-color: var(--headers);
                 height: fit-content;
                 width: fit-content;
                 padding: 10px;
@@ -242,23 +260,66 @@ main {
             }
         
     }
-    section:hover {
-        box-shadow: inset 0px 0px 8px
-        rgba(232, 102, 236, 1), 0 0 15px
-        rgba(232, 102, 236, 1);
-
-    }
+   
 }
 
+/* Independent control of each project hover for more customization */
+#project1:hover {
+    box-shadow: inset 0px 0px 15px
+    rgb(0, 0, 0), 0 0 25px
+    rgba(232, 102, 236, 0.6);
+}
 
+#project2:hover {
+    box-shadow: inset 0px 0px 15px
+    rgb(0, 0, 0), 0 0 25px
+    rgba(102, 236, 120, 0.6);
+}
+
+#project3:hover {
+    box-shadow: inset 0px 0px 15px
+    rgb(0, 0, 0), 0 0 25px
+    rgba(236, 102, 120, 0.6);
+}
+
+#project4:hover {
+    box-shadow: inset 0px 0px 15px
+    rgb(0, 0, 0), 0 0 25px
+    rgba(111, 102, 236, 0.6);
+}  
+
+#project5:hover {
+    box-shadow: inset 0px 0px 15px
+    rgb(0, 0, 0), 0 0 25px
+    rgba(222, 236, 102, 0.6);
+}  
+
+footer{
+    background-color: var(--lightblue);
+}
 /* This styles the "Contact Me" section */
 .contactme{
-display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: var(--body);
 
-    h2 {font-size: 300%;
-        padding: 10px;
-        padding-left: 56px;
-        border-right: 5px solid #192138;
+    h2 {
+            background-color: var(--headers);
+            font-size: 200%;
+            width: 180px;
+            text-align: center;
+            border: 5px solid #192138;
+            border-radius: 10px;
+            position: relative;
+            margin-top: -35px;
+            margin-left: 20px;
+            height: fit-content;
+            padding: 10px; 
     }
 }
 
