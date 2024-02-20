@@ -143,10 +143,6 @@ reflect the new images. */
     
     h2 {
         background-color: var(--headers);
-        
-
-        
-
         font-size: 200%;
         border: 5px solid black;
         border-radius: 10px;
@@ -195,11 +191,6 @@ reflect the new images. */
         max-width: 20vw;
         min-width: 340px;
         text-align: center;
-
-        
-        
-
-
         width: 400px;
         height: 250px;
         border: 8px double black;
@@ -226,9 +217,6 @@ reflect the new images. */
         flex: 0 1 75vw;
         max-width: 25vw;
         min-width: 340px;
-
-    
-
         width: 400px;
         height: 250px;
         border: 8px double black;
@@ -257,8 +245,6 @@ reflect the new images. */
         flex: 0 1 75vw;
         max-width: 20vw;
         min-width: 340px;
-
-
         width: 400px;
         height: 250px;
         border: 8px double black;
